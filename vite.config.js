@@ -15,9 +15,11 @@ export default defineConfig({
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
     assetsInlineLimit: 1024,
+    outDir: 'build/client',
+    emptyOutDir: true,
   },
   server: {
-    port: 7777,
+    port: 3000,
   },
   plugins: [
     mdx({
