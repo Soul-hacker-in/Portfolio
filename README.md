@@ -57,5 +57,6 @@ I do not give permission to present any of my projects as your own (this is bein
 
 
 <!-- npm install -g wrangler    
-wrangler login          
+wrangler login   
+npm run deploy         
  npx wrangler pages deploy ./build/client                 -->
