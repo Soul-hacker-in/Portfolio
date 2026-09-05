@@ -42,8 +42,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    title: 'Full Stack Developer | React, Node.js, FastAPI, DevSecOps',
+    description: `Portfolio of ${config.name} — Full Stack Developer with 2+ years of experience delivering secure, scalable web applications across government, enterprise, and B2B domains.`,
   });
 };
 
@@ -108,13 +108,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="MCF Unified Government Platform"
+        description="Consolidating citizen services, employee management, and automated payroll & pension operations for Municipal Corporation Faridabad with government-grade compliance."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'MCF Unified Government Platform',
           textures: [
             {
               srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
@@ -129,13 +129,13 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="MATE – CBSE & AIIMS Child Mindset Portal"
+        description="Real-time collaboration platform enabling peer group formation, instant messaging, and TensorFlow AI content moderation for cognitive engagement."
+        buttonText="View project"
+        buttonLink="/projects/slice"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'MATE CBSE AIIMS Child Mindset Portal',
           textures: [
             {
               srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
@@ -153,13 +153,13 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="AI-HRMS & Makemymed Enterprise Platforms"
+        description="High-performance enterprise HRMS & ERP platforms delivering 45% faster query responses, 99.3% uptime, and AI attendance reconciliation."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/volkihar-knight"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Enterprise HRMS and ERP platforms',
           textures: [
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,

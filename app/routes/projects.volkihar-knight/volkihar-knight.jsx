@@ -47,10 +47,15 @@ const Carousel = lazy(() =>
 
 const Armor = lazy(() => import('./armor').then(module => ({ default: module.Armor })));
 
-const title = 'Volkihar Knight';
+const title = 'Enterprise Platforms & Systems Architecture';
 const description =
-  'A lore-friendly armor mod for The Elder Scrolls V: Skyrim. Released on PC and Xbox One with over one million downloads across both platforms.';
-const roles = ['3D Modelling', 'Texturing', 'Graphic Design'];
+  'Architecting and scaling high-performance enterprise systems: AI-HRMS, Makemymed ERP, Let’s Konstruct B2B Marketplace, and Mangla Pumps CRM — achieving 99.3% uptime, 45% query gains, and automated workflows.';
+const roles = [
+  'Frontend Lead & Project Lead',
+  'Next.js & React.js',
+  'Redux Toolkit & SSR Prefetching',
+  'MySQL & Query Optimization',
+];
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -84,8 +89,8 @@ export function VolkiharKnight() {
         <ProjectHeader
           title={title}
           description={description}
-          linkLabel="Get the mod"
-          url="https://www.nexusmods.com/skyrimspecialedition/mods/4806/"
+          linkLabel="View GitHub"
+          url="https://github.com/vikas-namdeo"
           roles={roles}
         />
         <ProjectSection>
@@ -95,7 +100,7 @@ export function VolkiharKnight() {
               width={800}
               height={436}
               placeholder={volkiharBannerPlaceholder}
-              alt="A dark elf wearing the Volkihar Knight armor with the logo overlaid on the image."
+              alt="Enterprise HRMS and ERP dashboard interface overview."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
           </ProjectSectionContent>
@@ -107,7 +112,7 @@ export function VolkiharKnight() {
               width={480}
               height={300}
               placeholder={volkiharBookPlaceholder}
-              alt="A book containing a sketch depicting the logo and armor"
+              alt="Architecture blueprint and modular UI design system."
               sizes={`(max-width: ${media.mobile}px) 90vw, (max-width: ${media.tablet}px) 80vw, 70vw`}
             />
           </ProjectSectionContent>
@@ -116,23 +121,20 @@ export function VolkiharKnight() {
           <ProjectSectionColumns>
             <div className={styles.armor}>
               <Suspense>
-                <Armor alt="3D model of the Volkihar Knight armor" />
+                <Armor alt="3D interactive visualization" />
               </Suspense>
             </div>
             <div className={styles.textSection}>
-              <ProjectSectionHeading>Armor design</ProjectSectionHeading>
+              <ProjectSectionHeading>AI-HRMS & Performance Architecture</ProjectSectionHeading>
               <ProjectSectionText>
-                As a player I noticed there weren’t any heavy armor options for the
-                Volkihar faction. This kinda sucks when you’ve specialised in heavy armor
-                and decide to join the faction and discover they all wear light armor.
+                As Frontend Lead for AI-HRMS, I built a high-performance Next.js application
+                with server-side rendering (SSR) and intelligent route prefetching, cutting page load
+                times by 30%. Implementing Redux Toolkit for complex state management accelerated
+                dashboard responsiveness by 40%.
               </ProjectSectionText>
               <ProjectSectionText>
-                My solution was to create a mod that combines meshes from the Volkihar
-                faction armor with heavy plate armor. The mod builds upon textures and
-                meshes from the base game, so it unifies with Skyrim’s overall aesthetic.
-                I combined and modified the meshes in 3DS Max. To establish a cohesive
-                design across the set, I edited existing textures, and designed custom
-                textures in Photoshop.
+                We integrated AI-driven attendance reconciliation, reducing manual HR intervention
+                by 50% while achieving 100% sprint completion across all production deliverables.
               </ProjectSectionText>
             </div>
           </ProjectSectionColumns>
@@ -142,15 +144,15 @@ export function VolkiharKnight() {
             <div className={styles.logoContainer}>
               <VolkiharLogo
                 role="img"
-                aria-label="The Volkihar Knight logo, a monogram using the letters 'V' and 'K"
+                aria-label="Enterprise system logo mark"
               />
             </div>
             <ProjectTextRow center noMargin>
-              <ProjectSectionHeading>Identity design</ProjectSectionHeading>
+              <ProjectSectionHeading>Makemymed ERP Platform</ProjectSectionHeading>
               <ProjectSectionText>
-                The monogram uses custom designed typography to get the right balance of
-                weight and angularity. I combined this with Trajan for the text, which is
-                also used for Skyrim’s game title wordmark.
+                Leading engineering on the Makemymed ERP platform spanning 100+ screens across inventory,
+                orders, vendors, and reporting. Database schema normalization and query tuning reduced
+                API response times by 35% and MySQL query durations by 45%, sustaining 99.3% production uptime.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -164,17 +166,17 @@ export function VolkiharKnight() {
                   {
                     srcSet: `${volkiharSlide1} 960w, ${volkiharSlide1Large} 1920w`,
                     sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                    alt: 'A female character wearing the black coloured armor set.',
+                    alt: 'Let’s Konstruct B2B Construction Marketplace dashboard with lazy-loaded catalog.',
                   },
                   {
                     srcSet: `${volkiharSlide2} 960w, ${volkiharSlide2Large} 1920w`,
                     sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                    alt: 'A close up of the custom gauntlets design.',
+                    alt: 'Mangla Pumps CRM field operations and geo-fenced attendance tracking.',
                   },
                   {
                     srcSet: `${volkiharSlide3} 960w, ${volkiharSlide3Large} 1920w`,
                     sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                    alt: 'A female character wielding a sword and wearing the red coloured armor.',
+                    alt: 'Enterprise analytics and real-time reporting modules.',
                   },
                 ]}
                 width={1920}
@@ -190,7 +192,7 @@ export function VolkiharKnight() {
               width={1280}
               height={720}
               placeholder={volkiharEnderalPlaceholder}
-              alt="A promotional image from Enderal showing several characters in the game overlooking a distant city."
+              alt="Recognition banner for enterprise excellence."
               sizes={`100vw`}
             />
           }
@@ -202,24 +204,23 @@ export function VolkiharKnight() {
                 width={180}
                 height={200}
                 placeholder={volkiharEnderalLogoPlaceholder}
-                alt="The Enderal game logo"
+                alt="Austere Systems Limited emblem"
                 sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 220px`}
                 style={{ maxWidth: 220, width: '100%', marginBottom: 30 }}
               />
-              <ProjectSectionHeading>Featured in Enderal</ProjectSectionHeading>
+              <ProjectSectionHeading>Employee of the Quarter Award</ProjectSectionHeading>
               <ProjectSectionText>
-                I was super stoked to have my work featured in the major standalone mod
-                Enderal, which won best fan creation at the game awards in 2016. Within
-                the game my armor design can be found being used for the Wandering Mage
-                armor set.
+                Awarded Employee of the Quarter at Austere Systems Limited, recognized among all
+                engineering staff for technical leadership across government and enterprise projects,
+                high-velocity delivery, and maintaining rock-solid production stability.
               </ProjectSectionText>
               <Button
                 secondary
                 iconHoverShift
                 icon="chevron-right"
-                href="https://store.steampowered.com/app/933480/Enderal_Forgotten_Stories/"
+                href="/contact"
               >
-                View on Steam
+                Get in touch
               </Button>
             </ProjectTextRow>
           </ProjectSectionContent>

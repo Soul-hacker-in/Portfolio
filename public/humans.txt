@@ -8,18 +8,20 @@ and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+DEVELOPER | 開発者
 
-Vikas Namdeo
-Hand crafted design & web development
+Vikas Kumar Namdeo
+Full Stack Development & Application Security
 
-Design tools:
+Core tools:
+VS Code
 Figma
-Photoshop
-Blender
+Postman
+Burp Suite
+Docker
 
-twitter.com/hamishmw
-github.com/hamishmw
+linkedin.com/in/vikas-namdeo
+github.com/Soul-hacker-in
 
 _______________________________________________________________________________
 

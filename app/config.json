@@ -1,11 +1,23 @@
 {
   "name": "Vikas Namdeo",
-  "role": "Designer",
-  "disciplines": ["Developer", "Prototyper", "Animator", "Illustrator", "Modder"],
-  "url": "https://hamishw.com",
-  "bluesky": "hamishw.com",
-  "figma": "@Hamish",
-  "github": "HamishMW",
-  "repo": "https://github.com/HamishMW/portfolio",
-  "ascii": "__  __  __\n\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215\n"
+  "fullName": "Vikas Kumar Namdeo",
+  "role": "Full Stack Developer",
+  "disciplines": [
+    "React & Next.js",
+    "Node.js & FastAPI",
+    "DevSecOps & OWASP",
+    "AI & ML Integration",
+    "Cloud & Docker"
+  ],
+  "url": "https://github.com/vikas-namdeo",
+  "bluesky": "vikas-namdeo",
+  "figma": "vikas-namdeo",
+  "github": "Soul-hacker-in",
+  "linkedin": "vikas-namdeo",
+  "email": "vn2001golu@gmail.com",
+  "phone": "+91 9752902899",
+  "location": "Gurugram, Haryana, India",
+  "repo": "https://github.com/vikas-namdeo/Portfolio",
+  "ascii": "__    __\n\\ \\  / /\n \\ \\/ /\n  \\/ /\n"
 }
+

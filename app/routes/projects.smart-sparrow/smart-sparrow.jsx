@@ -70,14 +70,14 @@ const EarthSection = lazy(() =>
   import('./earth').then(module => ({ default: module.EarthSection }))
 );
 
-const title = 'Designing the future of education';
+const title = 'MCF Unified Government Platform';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'Leading live deployment of a multi-module government platform for Municipal Corporation Faridabad, consolidating citizen services, employee management, and financial operations with automated Payroll & Pension systems.';
 const roles = [
-  'Art Direction',
-  'UX and UI Design',
-  'Front End Development',
-  'Motion Design',
+  'Project Lead',
+  'Payroll & Pension Lead',
+  'Full Stack Architecture (React.js & FastAPI)',
+  'Security & RBAC',
 ];
 
 export const meta = () => {
@@ -105,7 +105,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://github.com/vikas-namdeo"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -126,21 +126,20 @@ export const SmartSparrow = () => {
                   : imageSprLessonBuilderLightPlaceholder
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="MCF Unified Platform dashboard and administration interface."
             />
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
           <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>The mission & challenge</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              Municipal Corporation Faridabad needed a centralized, resilient platform to
+              consolidate fragmented civic services, municipal employee records, and
+              multi-tier financial workflows. As Project Lead, I oversaw architecture,
+              sprint planning, and cross-team coordination to build a unified system
+              handling high transaction volumes with government-grade security,
+              strict compliance, and 99%+ operational uptime.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -173,13 +172,13 @@ export const SmartSparrow = () => {
               </SegmentedControl>
             </ProjectTextRow>
             <ProjectTextRow>
-              <ProjectSectionHeading>The aero design system</ProjectSectionHeading>
+              <ProjectSectionHeading>Automating Payroll & Pension</ProjectSectionHeading>
               <ProjectSectionText>
-                To streamline the design process across designers and engineers for such a
-                large project, it was important to lay the foundations with a strong,
-                flexible design system that could evolve during the product’s development
-                cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
+                As Payroll & Pension Module Lead, I architected an automated engine handling
+                salary computation (TDS, PF, allowances, grade-pay) and pension disbursement
+                for retirees. The system eliminated manual calculation errors and paper-based
+                processing, replacing them with end-to-end automated runs backed by strict
+                audit logging and Role-Based Access Control (RBAC).
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -201,16 +200,16 @@ export const SmartSparrow = () => {
                   ? imageSprDesignSystemDarkPlaceholder
                   : imageSprDesignSystemLightPlaceholder
               }
-              alt="The homepage of the aero design system docs website linking to principles and components."
+              alt="Component library and design guidelines for municipal applications."
               sizes="100vw"
             />
             <ProjectTextRow>
-              <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
+              <ProjectSectionHeading>Modular Component Architecture</ProjectSectionHeading>
               <ProjectSectionText>
-                A design system is useless if no one knows how to use it, so we put
-                together a comprehensive documentation website to cover principles, ux,
-                accessibility, and component guidelines for designers and engineers
-                working with the system.
+                To support numerous administrative screens across different municipal
+                departments, we built a reusable component system in React with Tailwind CSS
+                and Material-UI. This reduced UI build time by 25% and established a cohesive,
+                accessible standard across citizen and employee portals.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -224,7 +223,7 @@ export const SmartSparrow = () => {
                 width={1280}
                 height={900}
                 placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
+                alt="High-availability server infrastructure."
                 sizes="100vw"
               />
             }
@@ -232,12 +231,11 @@ export const SmartSparrow = () => {
             <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Motion design</ProjectSectionHeading>
+                  <ProjectSectionHeading>High-Throughput API Layer</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
+                    FastAPI (Python) and Node.js microservices provide asynchronous,
+                    low-latency endpoints for municipal records. Schema indexing and query
+                    optimization delivered up to 45% faster query responses on complex financial datasets.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>
@@ -248,7 +246,7 @@ export const SmartSparrow = () => {
                 width={1280}
                 height={800}
                 placeholder={videoSprMotionPlaceholder}
-                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
+                alt="Automated workflow execution and dashboard visualization."
                 sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
               />
             </ProjectSectionColumns>
@@ -257,13 +255,11 @@ export const SmartSparrow = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
+              <ProjectSectionHeading>Security & Penetration Testing</ProjectSectionHeading>
               <ProjectSectionText>
-                A major part of solving for collaboration was being able to visualize the
-                learner experience in the editor. This was especially beneficial for
-                subject matter experts and instructors need to review and give feedback on
-                the higher level structure without having to dig through all of the
-                adaptivity scenarios screen by screen.
+                Leveraging my background in web penetration testing, all API endpoints and session
+                handlers were validated using Burp Suite and OWASP ZAP to eliminate SQLi, XSS, and
+                CSRF vectors, ensuring compliance with strict government data security standards.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -281,7 +277,7 @@ export const SmartSparrow = () => {
                   ? imageSprStoryboarderDarkPlaceholder
                   : imageSprStoryboarderLightPlaceholder
               }
-              alt="A drag and drop storyboard style editor for creating an adaptive lesson."
+              alt="Workflow management and audit verification interface."
               sizes={`(max-width: ${media.mobile}px) 100vw, 80vw`}
             />
           </ProjectSectionContent>
@@ -291,14 +287,12 @@ export const SmartSparrow = () => {
             <ProjectSectionContent>
               <ProjectTextRow>
                 <ProjectSectionHeading>
-                  An extensible plugin ecosystem usable by everyone
+                  Scalable Service Architecture
                 </ProjectSectionHeading>
                 <ProjectSectionText>
-                  The most powerful aspect of the platform is the ability to create custom
-                  plugins for any content, whether it be a degree, course, lesson, screen,
-                  or interactive component. Out of the box these can be made configurable
-                  with minimal effort from developers. Learning designers can then edit
-                  everything using a common configuration interface.
+                  The system was containerized with Docker and integrated into automated CI/CD
+                  pipelines with Git branching workflows, accelerating deployment cycles by 20%
+                  and guaranteeing reliable multi-environment parity.
                 </ProjectSectionText>
               </ProjectTextRow>
             </ProjectSectionContent>
@@ -539,12 +533,11 @@ export const SmartSparrow = () => {
               </svg>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Ultimately the project was successful after Smart Sparrow and the aero
-                platform were{' '}
-                <Link href="https://www.prnewswire.com/news-releases/pearson-acquires-interactive-learning-technology-from-smart-sparrow-300987673.html">
-                  acquired by Pearson in 2020
-                </Link>{' '}
-                to become a foundation for their next generation learning platform.
+                The live deployment of the MCF Unified Government Platform successfully
+                consolidated multiple disparate civic and administrative systems into a unified portal.
+                The automated Payroll & Pension engine eliminated manual processing errors,
+                streamlining salary and pension disbursements with full audit trails, maintaining
+                99%+ uptime and zero security access violations in production.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
