@@ -10,6 +10,7 @@ import { cssProps, media, msToNum, numToMs } from '~/utils/style';
 import { NavToggle } from './nav-toggle';
 import { ThemeToggle } from './theme-toggle';
 import { navLinks, socialLinks } from './nav-data';
+import { useCanvas } from '~/components/canvas-trail';
 import config from '~/config.json';
 import styles from './navbar.module.css';
 
@@ -204,20 +205,43 @@ export const Navbar = () => {
   );
 };
 
-const NavbarIcons = ({ desktop }) => (
-  <div className={styles.navIcons}>
-    {socialLinks.map(({ label, url, icon }) => (
-      <a
-        key={label}
+const NavbarIcons = ({ desktop }) => {
+  const { canvasEnabled, toggleCanvas } = useCanvas();
+
+  return (
+    <div className={styles.navIcons}>
+      {socialLinks.map(({ label, url, icon }) => (
+        <a
+          key={label}
+          data-navbar-item={desktop || undefined}
+          className={styles.navIconLink}
+          aria-label={label}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon className={styles.navIcon} icon={icon} />
+        </a>
+      ))}
+      <button
+        type="button"
         data-navbar-item={desktop || undefined}
-        className={styles.navIconLink}
-        aria-label={label}
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
+        className={styles.navIconButton}
+        aria-label={
+          canvasEnabled
+            ? 'Disable interactive background effect'
+            : 'Enable interactive background effect'
+        }
+        title={
+          canvasEnabled
+            ? 'Turn off interactive effect'
+            : 'Turn on interactive effect'
+        }
+        onClick={toggleCanvas}
+        data-active={canvasEnabled}
       >
-        <Icon className={styles.navIcon} icon={icon} />
-      </a>
-    ))}
-  </div>
-);
+        <Icon className={styles.navIcon} icon="sparkle" />
+      </button>
+    </div>
+  );
+};

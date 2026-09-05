@@ -35,31 +35,28 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          description="A comprehensive overview of the technologies, frameworks, security tooling, and developer environment I rely on every day to engineer scalable, secure full-stack applications."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Design</ProjectSectionHeading>
+              <ProjectSectionHeading>Frontend & UI Architecture</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
+                    <Link href="https://react.dev/">React.js</Link> & <Link href="https://nextjs.org/">Next.js</Link> are my core frontend frameworks for building high-performance SSR/CSR web applications with optimized routing and prefetching.
                   </ListItem>
                   <ListItem>
-                    Any motion graphics I create are created in Adobe After Effects. So
-                    far I haven’t found a non-Adobe product that’s as good. If anyone has
-                    suggestions please <Link href="/contact">message me</Link>.
+                    <Link href="https://redux-toolkit.js.org/">Redux Toolkit</Link> is my standard for complex enterprise state management, accelerating dashboard responsiveness by up to 40%.
                   </ListItem>
                   <ListItem>
-                    For any 3D models and video editing I use{' '}
-                    <Link href="https://www.blender.org/">Blender</Link>. Since 2.8 it’s
-                    become way simpler to use and in a lot of ways better than expensive
-                    paid tools like 3DS Max or Maya.
+                    For styling and component libraries, I frequently leverage <Link href="https://tailwindcss.com/">Tailwind CSS</Link>, <Link href="https://mui.com/">Material-UI</Link>, and Bootstrap for clean, responsive, pixel-perfect interfaces.
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://www.typescriptlang.org/">TypeScript</Link> and modern JavaScript (ES6+) for type-safe, maintainable component and application logic.
+                  </ListItem>
+                  <ListItem>
+                    <Link href="https://www.figma.com">Figma</Link> for collaborating with product designers and translating design systems into accessible, modular code.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -69,45 +66,43 @@ export const Uses = () => {
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Development</ProjectSectionHeading>
+              <ProjectSectionHeading>Backend, Databases & Cloud</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    I use <Link href="https://vscodium.com/">VSCodium</Link> as my text
-                    editor, with the Tokyo Night theme and Operator Mono as my typeface of
-                    choice.
+                    <Link href="https://nodejs.org/">Node.js</Link> & <Link href="https://expressjs.com/">Express.js</Link> for high-concurrency RESTful APIs and real-time backend microservices.
                   </ListItem>
                   <ListItem>
-                    Firefox is my main browser for both development and general use.
+                    <Link href="https://fastapi.tiangolo.com/">FastAPI (Python)</Link> for asynchronous, high-throughput microservices, data validation, and ML integrations.
                   </ListItem>
                   <ListItem>
-                    <Link href="https://reactjs.org/">React</Link> is my front end
-                    Javascript library of choice. The component-centric mental model is
-                    the first thing that truly made sense to me as a designer.
+                    <Link href="https://socket.io/">WebSockets (Socket.io)</Link> for bidirectional, real-time communications, instant data sync, and collaborative chat.
                   </ListItem>
                   <ListItem>
-                    For 3D effects and image shaders I use{' '}
-                    <Link href="https://threejs.org/">three.js</Link>. It has a bit of a
-                    learning curve but you can do some really powerful stuff with it.
+                    <Link href="https://www.mysql.com/">MySQL</Link> & <Link href="https://www.mongodb.com/">MongoDB</Link> as primary datastores, with <Link href="https://redis.io/">Redis</Link> for caching and query latency optimization.
                   </ListItem>
                   <ListItem>
-                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I’m using vanilla CSS with{' '}
-                    <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
-                    features today.
+                    <Link href="https://www.docker.com/">Docker</Link>, <Link href="https://aws.amazon.com/">AWS (EC2, S3, Lambda)</Link>, Nginx, and GitHub Actions CI/CD for containerized deployments and cloud infrastructure.
+                  </ListItem>
+                </List>
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection padding="none" className={styles.section}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="m">
+              <ProjectSectionHeading>AI, Security & Testing</ProjectSectionHeading>
+              <ProjectSectionText as="div">
+                <List>
+                  <ListItem>
+                    <Link href="https://www.tensorflow.org/">TensorFlow</Link> & OpenAI API for integrating ML models, real-time content moderation, and LLM-powered cognitive analytics.
                   </ListItem>
                   <ListItem>
-                    For Javascript animations I use{' '}
-                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
-                    a great way to add spring animations to React and three.js.
+                    <Link href="https://portswigger.net/burp">Burp Suite</Link>, <Link href="https://www.zaproxy.org/">OWASP ZAP</Link>, and Kali Linux for web application penetration testing, OWASP Top 10 vulnerability assessments, and secure code reviews.
                   </ListItem>
                   <ListItem>
-                    For building and testing UI components in isolation I use{' '}
-                    <Link href="https://storybook.js.org/">Storybook</Link>. Check out the{' '}
-                    <Link href="https://storybook.hamishw.com">
-                      storybook for this website
-                    </Link>
-                    .
+                    <Link href="https://www.postman.com/">Postman</Link>, Swagger, and Jest for automated API testing, contract validation, and unit test suites.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -117,44 +112,36 @@ export const Uses = () => {
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow stretch width="m">
-              <ProjectSectionHeading>System</ProjectSectionHeading>
+              <ProjectSectionHeading>Development & Environment</ProjectSectionHeading>
               <Table>
                 <TableBody>
                   <TableRow>
-                    <TableHeadCell>Desktop</TableHeadCell>
-                    <TableCell>Custom built</TableCell>
+                    <TableHeadCell>Code Editor</TableHeadCell>
+                    <TableCell>VS Code / Cursor</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Operating system</TableHeadCell>
-                    <TableCell>Arch Linux (by the way)</TableCell>
+                    <TableHeadCell>Primary OS</TableHeadCell>
+                    <TableCell>Linux / Ubuntu & macOS</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Browser</TableHeadCell>
-                    <TableCell>Zen Browser</TableCell>
+                    <TableHeadCell>Security OS</TableHeadCell>
+                    <TableCell>Kali Linux</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
+                    <TableHeadCell>Version Control</TableHeadCell>
+                    <TableCell>Git (GitHub, GitLab)</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Tofu65</TableCell>
+                    <TableHeadCell>API Testing</TableHeadCell>
+                    <TableCell>Postman & Swagger</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G403</TableCell>
+                    <TableHeadCell>Security Suite</TableHeadCell>
+                    <TableCell>Burp Suite & OWASP ZAP</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Microphone</TableHeadCell>
-                    <TableCell>Blue Yeti</TableCell>
+                    <TableHeadCell>Database Tools</TableHeadCell>
+                    <TableCell>MySQL Workbench, MongoDB Compass, DBeaver</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

@@ -1,0 +1,15 @@
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity var(--durationM) ease;
+}
+
+.canvas[data-visible='false'] {
+  opacity: 0;
+  visibility: hidden;
+}

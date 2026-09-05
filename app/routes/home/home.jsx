@@ -18,7 +18,6 @@ import { ProjectSummary } from './project-summary';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
-import { renderCanvas } from '~/components/renderCanvas';
 
 // Prefetch draco decoader wasm
 export const links = () => {
@@ -91,10 +90,6 @@ export const Home = () => {
       indicatorObserver.disconnect();
     };
   }, [visibleSections]);
-
-  useEffect(() => {
-    renderCanvas();
-  }, []);
 
   return (
     <div className={styles.home}>
@@ -174,7 +169,6 @@ export const Home = () => {
         id="details"
       />
       <Footer />
-      <canvas className="bg-skin-base pointer-events-none absolute inset-0" id="canvas"></canvas>
     </div>
   );
 };

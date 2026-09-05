@@ -123,7 +123,8 @@
     }
   }
 
-  .navIconLink {
+  .navIconLink,
+  .navIconButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,12 +132,25 @@
     width: var(--space2XL);
     height: var(--space2XL);
     color: var(--textLight);
-    transition: color var(--durationM) var(--bezierFastoutSlowin);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color var(--durationM) var(--bezierFastoutSlowin), opacity var(--durationS) ease, transform var(--durationS) ease;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus-visible {
       color: var(--accent);
+      transform: scale(1.1);
     }
+  }
+
+  .navIconButton[data-active='false'] {
+    opacity: 0.35;
+  }
+
+  .navIconButton[data-active='true'] {
+    color: var(--primary);
   }
 
   .navIcon {

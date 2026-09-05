@@ -18,6 +18,7 @@ import { Error } from '~/layouts/error';
 import { VisuallyHidden } from '~/components/visually-hidden';
 import { Navbar } from '~/layouts/navbar';
 import { Progress } from '~/components/progress';
+import { CanvasProvider, BackgroundCanvas } from '~/components/canvas-trail';
 import config from '~/config.json';
 import styles from './root.module.css';
 import './reset.module.css';
@@ -117,21 +118,24 @@ export default function App() {
         <link rel="canonical" href={canonicalUrl} />
       </head>
       <body data-theme={theme}>
-        <ThemeProvider theme={theme} toggleTheme={toggleTheme}>
-          <Progress />
-          <VisuallyHidden showOnFocus as="a" className={styles.skip} href="#main-content">
-            Skip to main content
-          </VisuallyHidden>
-          <Navbar />
-          <main
-            id="main-content"
-            className={styles.container}
-            tabIndex={-1}
-            data-loading={state === 'loading'}
-          >
-            <Outlet />
-          </main>
-        </ThemeProvider>
+        <CanvasProvider>
+          <ThemeProvider theme={theme} toggleTheme={toggleTheme}>
+            <BackgroundCanvas />
+            <Progress />
+            <VisuallyHidden showOnFocus as="a" className={styles.skip} href="#main-content">
+              Skip to main content
+            </VisuallyHidden>
+            <Navbar />
+            <main
+              id="main-content"
+              className={styles.container}
+              tabIndex={-1}
+              data-loading={state === 'loading'}
+            >
+              <Outlet />
+            </main>
+          </ThemeProvider>
+        </CanvasProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
