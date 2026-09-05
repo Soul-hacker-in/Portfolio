@@ -10,7 +10,7 @@ _______________________________________________________________________________
 
 DESIGNER | デザイナー
 
-Hamish Williams
+Vikas Namdeo
 Hand crafted design & web development
 
 Design tools:
